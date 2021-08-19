@@ -333,6 +333,7 @@ export default {
   },
   mounted() {
     this.getProduct();
+    this.getProduct2();
   },
   methods: {
     ...mapMutations({

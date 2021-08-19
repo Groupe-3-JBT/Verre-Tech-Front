@@ -5,8 +5,14 @@
   "Popup": {
     "description": "Auto imported from components/Popup.vue"
   },
+  "Location": {
+    "description": "Auto imported from components/location/Location.vue"
+  },
   "PopupsPopupNewsletter": {
     "description": "Auto imported from components/popups/PopupNewsletter.vue"
+  },
+  "AuthLogin": {
+    "description": "Auto imported from components/auth/Login.vue"
   },
   "CheckoutAddBillingAddress": {
     "description": "Auto imported from components/checkout/AddBillingAddress.vue"
@@ -34,12 +40,6 @@
   },
   "CheckoutSummary": {
     "description": "Auto imported from components/checkout/Summary.vue"
-  },
-  "Location": {
-    "description": "Auto imported from components/location/Location.vue"
-  },
-  "AuthLogin": {
-    "description": "Auto imported from components/auth/Login.vue"
   },
   "ProduitsProductCard": {
     "description": "Auto imported from components/produits/productCard.vue"

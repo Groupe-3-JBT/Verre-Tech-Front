@@ -14,6 +14,7 @@
 // import { gsap } from "gsap";
 import $ from "jquery";
 import { db } from "~/plugins/firebase/firebaseConfig.js";
+import axios from "axios";
 
 import productCard from "@/components/produits/productCard.vue";
 
@@ -185,7 +186,7 @@ export default {
     };
   },
   mounted() {
-    // this.getHomeProduct();
+    this.getHomeProduct();
   },
   methods: {
     moveCard(id) {
@@ -195,7 +196,14 @@ export default {
       }, 900);
     },
     getHomeProduct() {
-
+      axios.get("http://3.21.236.175:9000/products/"),
+        {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+          },
+        }.then((result) => {
+          console.log(result);
+        });
     },
   },
   components: {

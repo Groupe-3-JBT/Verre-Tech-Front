@@ -3,77 +3,66 @@
     "name": "checkout",
     "path": "/checkout",
     "component": "/Applications/MAMP/htdocs/Verre-Tech-Front/pages/checkout/index.vue",
-    "chunkName": "pages/checkout/index",
-    "_name": "_28f2a1ef"
+    "chunkName": "pages/checkout/index"
   },
   {
     "name": "commandes",
     "path": "/commandes",
     "component": "/Applications/MAMP/htdocs/Verre-Tech-Front/pages/commandes/index.vue",
-    "chunkName": "pages/commandes/index",
-    "_name": "_08058dc6"
+    "chunkName": "pages/commandes/index"
   },
   {
     "name": "contact",
     "path": "/contact",
     "component": "/Applications/MAMP/htdocs/Verre-Tech-Front/pages/contact/index.vue",
-    "chunkName": "pages/contact/index",
-    "_name": "_8aba8726"
+    "chunkName": "pages/contact/index"
   },
   {
     "name": "panier",
     "path": "/panier",
     "component": "/Applications/MAMP/htdocs/Verre-Tech-Front/pages/panier/index.vue",
-    "chunkName": "pages/panier/index",
-    "_name": "_13431982"
+    "chunkName": "pages/panier/index"
   },
   {
     "name": "produits",
     "path": "/produits",
     "component": "/Applications/MAMP/htdocs/Verre-Tech-Front/pages/produits/index.vue",
-    "chunkName": "pages/produits/index",
-    "_name": "_138d3f93"
+    "chunkName": "pages/produits/index"
   },
   {
     "name": "panier-LineChart",
     "path": "/panier/LineChart",
     "component": "/Applications/MAMP/htdocs/Verre-Tech-Front/pages/panier/LineChart.js",
-    "chunkName": "pages/panier/LineChart",
-    "_name": "_b1619916"
+    "chunkName": "pages/panier/LineChart"
   },
   {
     "name": "categories-route",
     "path": "/categories/:route?",
     "component": "/Applications/MAMP/htdocs/Verre-Tech-Front/pages/categories/_route.vue",
-    "chunkName": "pages/categories/_route",
-    "_name": "_1a3f64e7"
+    "chunkName": "pages/categories/_route"
   },
   {
     "name": "commandes-id",
     "path": "/commandes/:id",
     "component": "/Applications/MAMP/htdocs/Verre-Tech-Front/pages/commandes/_id.vue",
-    "chunkName": "pages/commandes/_id",
-    "_name": "_0def6ca4"
+    "chunkName": "pages/commandes/_id"
   },
   {
     "name": "produits-route",
     "path": "/produits/:route",
     "component": "/Applications/MAMP/htdocs/Verre-Tech-Front/pages/produits/_route.vue",
-    "chunkName": "pages/produits/_route",
-    "_name": "_351cca4e"
+    "chunkName": "pages/produits/_route"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Applications/MAMP/htdocs/Verre-Tech-Front/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_141864c8"
+    "chunkName": "pages/index"
   },
   {
     "name": "route",
     "path": "/:route",
     "component": "/Applications/MAMP/htdocs/Verre-Tech-Front/pages/_route.vue",
-    "chunkName": "pages/_route",
-    "_name": "_4fdccdf0"
+    "chunkName": "pages/_route"
   }
 ]
