@@ -136,6 +136,7 @@
                 >
               </select>
             </div>
+            <!-- PODUCTS -->
             <h2>Vos produits</h2>
             <div class="checkout-alert" v-if="selectedItems.length == 0" >
               <p>Votre panier est actuellement vide.</p>
