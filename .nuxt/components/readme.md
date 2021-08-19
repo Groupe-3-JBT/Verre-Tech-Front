@@ -10,7 +10,6 @@ You can directly use them in pages and other components without the need to impo
 - `<Popup>` | `<popup>` (components/Popup.vue)
 - `<Location>` | `<location>` (components/location/Location.vue)
 - `<PopupsPopupNewsletter>` | `<popups-popup-newsletter>` (components/popups/PopupNewsletter.vue)
-- `<AuthLogin>` | `<auth-login>` (components/auth/Login.vue)
 - `<CheckoutAddBillingAddress>` | `<checkout-add-billing-address>` (components/checkout/AddBillingAddress.vue)
 - `<CheckoutAddDeliveryAddress>` | `<checkout-add-delivery-address>` (components/checkout/AddDeliveryAddress.vue)
 - `<CheckoutAlert>` | `<checkout-alert>` (components/checkout/Alert.vue)
@@ -20,4 +19,5 @@ You can directly use them in pages and other components without the need to impo
 - `<CheckoutPayment>` | `<checkout-payment>` (components/checkout/Payment.vue)
 - `<CheckoutPersonnalInfo>` | `<checkout-personnal-info>` (components/checkout/PersonnalInfo.vue)
 - `<CheckoutSummary>` | `<checkout-summary>` (components/checkout/Summary.vue)
+- `<AuthLogin>` | `<auth-login>` (components/auth/Login.vue)
 - `<ProduitsProductCard>` | `<produits-product-card>` (components/produits/productCard.vue)

@@ -4,11 +4,11 @@
       <NuxtLink :to="'/produits/' + infoProduct.id">
       <div class="card-picture">
         <img
-          :src="infoProduct.fields.Image[0].url"
+          :src="infoProduct.image"
         />
       </div>
       </NuxtLink>
-      <p>{{ infoProduct.fields.Nom }}</p>
+      <p>{{ infoProduct.name }}</p>
 
       <div class="card-form">
         <p v-if="calculPrix > 0" class="price">
@@ -82,7 +82,7 @@ export default {
     calculPrix() {
       var price = NaN;
           price = parseFloat(
-            this.infoProduct.fields.Prix
+            this.infoProduct.price
               .toString()
               .replace(/,/, ".")
           ).toFixed(2);

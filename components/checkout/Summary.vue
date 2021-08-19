@@ -11,9 +11,9 @@
       <tr :key="i" v-for="(item, i) in items" :item="item">
         <NuxtLink :to="'/produits/' + item.id">
           <td>
-            <img :src="item.fields.Image[0].url" alt="" />
+            <img :src="item.image" alt="" />
             <div>
-              <h3>{{ item.fields.Nom }}</h3>
+              <h3>{{ item.name }}</h3>
             </div>
           </td>
         </NuxtLink>
@@ -69,10 +69,10 @@
       <li :key="i" v-for="(item, i) in items" :item="item">
         <div style="display: flex; align-items: center;">
           <NuxtLink :to="'/produits/' + item.id">
-            <img :src="item.fields.Image[0].url" alt="image de l'article" />
+            <img :src="item.image" alt="image de l'article" />
           </NuxtLink>
           <div class="column">
-            <p class="titre">{{ item.fields.Nom }}</p>
+            <p class="titre">{{ item.name }}</p>
             <div class="row">
               <p>Prix unitaire :</p>
               <p>{{ getItemPrice(item).replace(".",",") }}€</p>
@@ -109,8 +109,8 @@
           <p>{{ getTotalPriceHt() }}€</p>
         </div>
         <div class="ligne-total" :key="i" v-for="(item, i) in listTva">
-          <p>TVA {{item[0].fields.TVA}} %</p>
-          <p>{{ getTva(item, item[0].fields.TVA) }}€</p>
+          <p>TVA {{item[0].tva}} %</p>
+          <p>{{ getTva(item, item[0].tva) }}€</p>
         </div>
         <div class="ligne-total-ttc">
           <p>Total TTC</p>
@@ -176,7 +176,7 @@ export default {
     },
     listTva() {
       var resultList = this.items.reduce((result, currentValue) => {
-          (result[currentValue.fields.TVA] = result[currentValue.fields.TVA] || []).push(currentValue);
+          (result[currentValue.tva] = result[currentValue.tva] || []).push(currentValue);
           return result;
         }, {});
       return resultList
@@ -190,7 +190,7 @@ export default {
   methods: {
     getTotalPriceHt(){
       return parseFloat(this.items.reduce((sum, currentValue) => {
-        return sum + parseFloat(this.getItemPrice(currentValue)*currentValue.itemQuantity) - (parseFloat(this.getItemPrice(currentValue)*currentValue.itemQuantity)*currentValue.fields.TVA/100);
+        return sum + parseFloat(this.getItemPrice(currentValue)*currentValue.itemQuantity) - (parseFloat(this.getItemPrice(currentValue)*currentValue.itemQuantity)*currentValue.tva/100);
       }, 0)).toFixed(2).replace(".",",");
     },
     getTva(items, taux){

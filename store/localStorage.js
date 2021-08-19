@@ -63,7 +63,7 @@ export const getters = {
     var optionLivraison = Cookies.get('optionLivraison') ? JSON.parse(Cookies.get('optionLivraison')) : {mode: "retrait"};
     var price = 0
     if(optionLivraison.mode == "retrait") {
-      price = parseFloat(item.fields.Prix.toString().replace(/,/, '.'));
+      price = parseFloat(item.price.toString().replace(/,/, '.'));
     }
     return parseFloat(price).toFixed(2)
   },
@@ -73,7 +73,7 @@ export const getters = {
     for (let i = 0; i < state.items.length; i++) {
       const item = state.items[i];
         if(optionLivraison.mode == "retrait") {
-          price += parseFloat(item.fields.Prix.toString().replace(/,/, '.')) * item.itemQuantity;
+          price += parseFloat(item.price.toString().replace(/,/, '.')) * item.itemQuantity;
         }
     }
     return parseFloat(price).toFixed(2)

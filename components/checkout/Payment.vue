@@ -9,7 +9,7 @@
               <div class="flex">
                 <h3>
                   {{
-                    item.fields.Nom +
+                    item.name +
                     (item.itemQuantity > 1 ? " x" + item.itemQuantity : "")
                   }}
                 </h3>
@@ -25,8 +25,8 @@
               <p>{{ getTotalPriceHt() }}€</p>
             </div>
             <div class="flex" :key="i" v-for="(item, i) in listTva">
-              <p>TVA {{item[0].fields.TVA}} %</p>
-              <p>{{ getTva(item, item[0].fields.TVA) }}€</p>
+              <p>TVA {{item[0].tva}} %</p>
+              <p>{{ getTva(item, item[0].tva) }}€</p>
             </div>
             <div class="flex row-total">
               <p>Total TTC</p>
@@ -85,7 +85,7 @@ export default {
       },
       listTva() {
         var resultList = this.items.reduce((result, currentValue) => {
-            (result[currentValue.fields.TVA] = result[currentValue.fields.TVA] || []).push(currentValue);
+            (result[currentValue.tva] = result[currentValue.tva] || []).push(currentValue);
             return result;
           }, {});
         return resultList
@@ -306,7 +306,7 @@ export default {
       },
       getTotalPriceHt(){
         return parseFloat(this.items.reduce((sum, currentValue) => {
-          return sum + parseFloat(this.getItemPrice(currentValue)*currentValue.itemQuantity) - (parseFloat(this.getItemPrice(currentValue)*currentValue.itemQuantity)*currentValue.fields.TVA/100);
+          return sum + parseFloat(this.getItemPrice(currentValue)*currentValue.itemQuantity) - (parseFloat(this.getItemPrice(currentValue)*currentValue.itemQuantity)*currentValue.tva/100);
         }, 0)).toFixed(2).replace(".",",");
       },
       getTva(items, taux){
