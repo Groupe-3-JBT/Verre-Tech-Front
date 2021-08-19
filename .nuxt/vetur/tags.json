@@ -1,0 +1,47 @@
+{
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "Popup": {
+    "description": "Auto imported from components/Popup.vue"
+  },
+  "AuthLogin": {
+    "description": "Auto imported from components/auth/Login.vue"
+  },
+  "Location": {
+    "description": "Auto imported from components/location/Location.vue"
+  },
+  "CheckoutAddBillingAddress": {
+    "description": "Auto imported from components/checkout/AddBillingAddress.vue"
+  },
+  "CheckoutAddDeliveryAddress": {
+    "description": "Auto imported from components/checkout/AddDeliveryAddress.vue"
+  },
+  "CheckoutAlert": {
+    "description": "Auto imported from components/checkout/Alert.vue"
+  },
+  "CheckoutEditBillingAddress": {
+    "description": "Auto imported from components/checkout/EditBillingAddress.vue"
+  },
+  "CheckoutEditDeliveryAddress": {
+    "description": "Auto imported from components/checkout/EditDeliveryAddress.vue"
+  },
+  "CheckoutItem": {
+    "description": "Auto imported from components/checkout/Item.vue"
+  },
+  "CheckoutPayment": {
+    "description": "Auto imported from components/checkout/Payment.vue"
+  },
+  "CheckoutPersonnalInfo": {
+    "description": "Auto imported from components/checkout/PersonnalInfo.vue"
+  },
+  "CheckoutSummary": {
+    "description": "Auto imported from components/checkout/Summary.vue"
+  },
+  "PopupsPopupNewsletter": {
+    "description": "Auto imported from components/popups/PopupNewsletter.vue"
+  },
+  "ProduitsProductCard": {
+    "description": "Auto imported from components/produits/productCard.vue"
+  }
+}
