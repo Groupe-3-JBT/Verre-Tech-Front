@@ -157,7 +157,7 @@
       <li class="row">
         <img src="~/assets/medias/quality.svg" alt="spécialistes" />
         <p>
-          <span>Leader</span><br />
+          <span>Leeder</span><br />
           dans la fabrication et la distribution en magasins de produits en
           verre techniques et décoratifs.
         </p>
