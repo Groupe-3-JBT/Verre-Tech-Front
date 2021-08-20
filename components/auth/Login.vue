@@ -205,7 +205,7 @@
           </div>
           <div class="row-cgv">
             <input v-model="formSignUp.newsletter" type="checkbox" />
-            <p>Je souhaite recevoir des offres promotionnelles.</p>
+            <p>Je souhaite recevoir des offres promotionnelles</p>
           </div>
           <div class="flex footer-buttons">
             <div @click="signUp()" class="btn-signup" style="margin-top: 20px">
