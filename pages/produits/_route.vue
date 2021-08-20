@@ -23,7 +23,7 @@
           </div>
           <div class="column commande">
             <div>
-              <form class="column" action="">
+              <!-- <form class="column" action="">
                 <label>Mode de commande :</label>
 
                 <div class="row">
@@ -38,11 +38,7 @@
                   <label 
                     class="label-mode"
                     for="depot">Retrait en dépôt</label>
-                </div>
-                <!-- <span>{{
-                  customVarList.find((el) => el.label === "Lieu de retrait")
-                }}</span> -->
-                <select
+                </div>                <select
                   v-if="
                     deliveryMode == 'depot'
                   "
@@ -50,7 +46,6 @@
                   name="lieu"
                   id="livraison"
                 >
-                  <!-- <option :value="-1">-- Choisissez un lieu de retrait</option> -->
                   <option
                     v-for="(element, index) in depots"
                     :key="index"
@@ -58,7 +53,7 @@
                     {{ element }}
                   </option>
                 </select>
-              </form>
+              </form> -->
 
               <div v-if="calculPrix > 0" class="row total">
                 <p>Votre prix :</p>
