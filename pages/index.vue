@@ -21,6 +21,7 @@ import productCard from "@/components/produits/productCard.vue";
 export default {
   data() {
     return {
+      errorMessage: "",
       products: [],
     };
   },
@@ -39,6 +40,7 @@ export default {
           this.products = result.data.products
         }).catch((error) => {
           console.error("error", error)
+          this.errorMessage = "Erreur serveur"
         })
     },
   },

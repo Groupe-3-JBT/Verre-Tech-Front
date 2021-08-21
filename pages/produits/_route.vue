@@ -154,7 +154,7 @@ export default {
   },
   head() {
     return {
-      title: this.product.metaTitle ? this.product.metaTitle : "Grand Paris Combustibles",
+      title: this.product.metaTitle ? this.product.metaTitle : "VERRE TECH",
       meta: [
         // `hid` est un identifiant unique. N'utilisez pas `vmid` pour cela car cela ne marchera pas.
         {
